@@ -8,7 +8,7 @@ Bu proje, Python, Flask ve SQLAlchemy kullanılarak geliştirilmiş; Nesne Yöne
 - **ORM:** SQL komutları yazmadan veritabanı yönetimi.
 
 ## Ekran Görüntüsü
-![Ekran Görüntüsü](screenshot.png)
+![Ekran Görüntüsü](Screenshot.png)
 
 ## Kurulum
 
