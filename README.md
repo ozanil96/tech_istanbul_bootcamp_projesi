@@ -7,6 +7,9 @@ Bu proje, Python, Flask ve SQLAlchemy kullanılarak geliştirilmiş; Nesne Yöne
 - **CRUD İşlemleri:** Görev ekleme, okuma, güncelleme (Tamamlandı/Beklemede) ve silme.
 - **ORM:** SQL komutları yazmadan veritabanı yönetimi.
 
+## Ekran Görüntüsü
+![Ekran Görüntüsü](screenshot.png)
+
 ## Kurulum
 
 1. Projeyi klonlayın:
