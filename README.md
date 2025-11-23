@@ -1,2 +1,2 @@
 # tech_istanbul_bootcamp_projesi
-Tech İstanbul Bootcamp Projesi
+Flask ve SQLAlchemy kullanılarak hazırlanmış OOP tabanlı To-Do uygulaması
