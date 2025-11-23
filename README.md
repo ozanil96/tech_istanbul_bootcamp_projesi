@@ -11,5 +11,5 @@ Bu proje, Python, Flask ve SQLAlchemy kullanılarak geliştirilmiş; Nesne Yöne
 
 1. Projeyi klonlayın:
    ```bash
-   git clone https://github.com/KULLANICI_ADI/flask-oop-todo-app.git
-   cd flask-oop-todo-app
+   git clone https://github.com/ozanil96/tech_istanbul_bootcamp_projesi
+   cd tech_istanbul_bootcamp_projesi
