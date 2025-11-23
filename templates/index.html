@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP To-Do Listesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Yapılacaklar Listesi</h1>
+
+    <!-- Görev Ekleme Formu -->
+    <form action="/ekle" method="POST" class="todo-form">
+        <input type="text" name="baslik" placeholder="Görev Başlığı..." required>
+        <input type="text" name="aciklama" placeholder="Açıklama (İsteğe bağlı)...">
+        <button type="submit">Ekle</button>
+    </form>
+
+    <!-- Görev Listesi -->
+    <ul class="todo-list">
+        {% for gorev in gorevler %}
+        <li class="todo-item {% if gorev.tamamlandi %}completed{% endif %}">
+            <div class="content">
+                <h3>{{ gorev.baslik }}</h3>
+                <p>{{ gorev.aciklama }}</p>
+                <span class="status">
+                    Durum: {{ 'Tamamlandı' if gorev.tamamlandi else 'Beklemede' }}
+                </span>
+            </div>
+            <div class="actions">
+                <!-- Durum Güncelle Butonu -->
+                <a href="/guncelle/{{ gorev.id }}" class="btn-toggle">
+                    {{ 'Geri Al' if gorev.tamamlandi else 'Tamamla' }}
+                </a>
+                <!-- Sil Butonu -->
+                <a href="/sil/{{ gorev.id }}" class="btn-delete">Sil</a>
+            </div>
+        </li>
+        {% else %}
+            <p style="text-align:center;">Henüz hiç görev eklenmedi.</p>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>
